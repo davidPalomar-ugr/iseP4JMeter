@@ -8,7 +8,7 @@
     <h1><%= title %></h1>
     <pre>
     Descripción de la API Restful:
-      POST /auth/login
+      POST /api/v1/auth/login
         Parametros:
           login:&lt;emailUsuario&gt;
           password:&lt;secreto&gt;
@@ -17,7 +17,7 @@
         Retorna:
           JWT Token
 
-      GET /alumnos/alumno/&lt;email&gt;
+      GET /api/v1/alumnos/alumno/&lt;email&gt;
         Seguridad:
             Token JWT valido en cabecera estandar authorization: Bearer &lt;token&gt;
             Alumnos solo pueden solicitar sus datos. Administradores pueden solicitar cualquier alumno válido
