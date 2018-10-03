@@ -1,0 +1,21 @@
+version: '3.0'
+services: 
+    #MongoDB based in the original Mongo Image
+    mongodb:
+      image: mongo
+      ports:
+        - "27017:27017"
+
+    # Initialize mongodb with data
+    mongodbinit:
+      build: ./mongodb
+      links:
+        - mongodb
+
+    # Nodejs App
+    nodejs:
+      build: ./nodejs
+      ports:
+        - "3000:3000"
+      links:
+        - mongodb

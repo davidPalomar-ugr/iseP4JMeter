@@ -1,0 +1,12 @@
+[
+  '{{repeat(20)}}',
+    {
+        id: '{{index(2000)}}',
+      login: function(tags){
+      	return (tags.firstName()+tags.surname()+'@etsii.ugr.es').toLowerCase();
+      },
+        password: '{{lorem(1,"words")}}',
+        rol: 'Administrador'
+      
+	}
+]

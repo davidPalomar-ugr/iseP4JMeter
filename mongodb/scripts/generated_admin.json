@@ -1,0 +1,122 @@
+[
+  {
+    "id": 2000,
+    "login": "stuartkirby@etsii.ugr.es",
+    "password": "tempor",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2001,
+    "login": "janablake@etsii.ugr.es",
+    "password": "excepteur",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2002,
+    "login": "fuentesrandolph@etsii.ugr.es",
+    "password": "dolor",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2003,
+    "login": "hogancarney@etsii.ugr.es",
+    "password": "proident",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2004,
+    "login": "claricecamacho@etsii.ugr.es",
+    "password": "nostrud",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2005,
+    "login": "fowlervazquez@etsii.ugr.es",
+    "password": "deserunt",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2006,
+    "login": "suarezgraves@etsii.ugr.es",
+    "password": "laborum",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2007,
+    "login": "bakerreilly@etsii.ugr.es",
+    "password": "proident",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2008,
+    "login": "osbornecantrell@etsii.ugr.es",
+    "password": "sint",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2009,
+    "login": "dickersonlowe@etsii.ugr.es",
+    "password": "labore",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2010,
+    "login": "harrisongomez@etsii.ugr.es",
+    "password": "ad",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2011,
+    "login": "garrettbeck@etsii.ugr.es",
+    "password": "occaecat",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2012,
+    "login": "pottschase@etsii.ugr.es",
+    "password": "proident",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2013,
+    "login": "kaitlinsavage@etsii.ugr.es",
+    "password": "qui",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2014,
+    "login": "buchanancrosby@etsii.ugr.es",
+    "password": "irure",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2015,
+    "login": "annmendoza@etsii.ugr.es",
+    "password": "minim",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2016,
+    "login": "cookecooley@etsii.ugr.es",
+    "password": "do",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2017,
+    "login": "watsonwalters@etsii.ugr.es",
+    "password": "nulla",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2018,
+    "login": "ramonaeaton@etsii.ugr.es",
+    "password": "anim",
+    "rol": "Administrador"
+  },
+  {
+    "id": 2019,
+    "login": "lanecurry@etsii.ugr.es",
+    "password": "voluptate",
+    "rol": "Administrador"
+  }
+]

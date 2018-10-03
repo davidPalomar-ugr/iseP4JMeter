@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <pre>
+    Descripción de la API Restful:
+      POST /auth/login
+        Parametros:
+          login:&lt;emailUsuario&gt;
+          password:&lt;secreto&gt;
+        Seguridad:
+          Acceso protegido con BasicAuth (etsiiApi:laApiDeLaETSIIDaLache)
+        Retorna:
+          JWT Token
+
+      GET /alumnos/alumno/&lt;email&gt;
+        Seguridad:
+            Token JWT valido en cabecera estandar authorization: Bearer &lt;token&gt;
+            Alumnos solo pueden solicitar sus datos. Administradores pueden solicitar cualquier alumno válido
+        Retorna:
+            Objeto Json con perfil de alumno
+
+    </pre>
+  </body>
+  </body>
+</html>

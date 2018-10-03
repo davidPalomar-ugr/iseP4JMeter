@@ -1,0 +1,26 @@
+[
+  '{{repeat(100)}}',
+	{
+      nombre: '{{firstName()}}',
+      apellidos: '{{surname()}} {{surname()}}',
+      sexo: '{{gender()}}',
+      email: '{{email()}}',
+      
+      fechaNacimiento: '{{date(new Date(1970, 0, 1), new Date(2000, 11, 31), "YYYY-MM-dd")}}',
+      comentarios: '{{lorem(Math.floor(Math.random()*5),"paragraphs")}}',
+      cursos: [
+        '{{repeat(1,4)}}',
+        {
+          curso:'{{index(1)}}',
+          media:'{{floating(5,10,1, "0.0")}}'
+        }
+      ],
+      usuarioId:'{{index(1)}}',
+      usuarioObj: {
+        usuarioId: '{{index(1)}}',
+        login: '{{email()}}',
+        password: '{{lorem(1,"words")}}',
+        rol: 'Alumno'
+      }
+	}
+]
