@@ -8,6 +8,9 @@ El servidor se distribuye en forma de una aplicación de contenedores Docker sob
 Tras descar el código, situarse en el directorio principal (al mismo nivel del archivo docker-compose.yml y ejecutar: 
   docker-compose up 
   
+Para parar la aplicación ejecutar: 
+  docker-compose down 
+  
 Docker descargará las imágenes de contenedores asociados y construirá las nuevas imagenes para al aplicacion. 
 
 Accediendo con un navegador a http://localhost:3000 debe presentarse la descripción básica de la api
@@ -18,5 +21,7 @@ El subdirectorio jMeter contiene los archivos necesarios para realizar la sesió
     alumnos.csv: Archivo con credenciales de alumnos
     administradores.csv: Archivo con credenciales de administradores
     apiAlumno.log: Log de accesso Http en formato apache. 
+    
+    
   
   
