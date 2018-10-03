@@ -12,6 +12,8 @@ Docker descargará las imágenes de contenedores asociados y construirá las nue
 
 Accediendo con un navegador a http://localhost:3000 debe presentarse la descripción básica de la api
 
+Para una prueba más detallada de que el entorno funciona, instala curl y ejecuta el script pruebaEntorno.sh. Como resultado, debe obtener el objeto Json de un alumno valido. 
+
 El subdirectorio jMeter contiene los archivos necesarios para realizar la sesión de prácticas: 
     alumnos.csv: Archivo con credenciales de alumnos
     administradores.csv: Archivo con credenciales de administradores
