@@ -1,5 +1,5 @@
 #!/bin/bash
-SERVER=192.168.56.10
+SERVER=localhost
 TOKEN=$(curl -s \
 -u etsiiApi:laApiDeLaETSIIDaLache \
 -d "login=mariweiss@tropoli.com&password=anim" \
