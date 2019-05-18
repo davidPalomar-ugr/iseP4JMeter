@@ -74,4 +74,6 @@ La prueba de JMeter debe:
 
 La imagen siguiente presenta un posible diseño de la carga: 
 
+![JMeterLoadTest](images/jmeterLoadTest.png)
+
 En la URL http://\<IPDockerContainer>:3000/status se puede monitorizar el estado de carga del servidor NodeJS. 
