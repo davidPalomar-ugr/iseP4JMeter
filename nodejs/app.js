@@ -9,9 +9,6 @@ const helmet = require('helmet');
 
 var app = express();
 
-// Monitoring /status
-app.use(require('express-status-monitor')());
-
 // Helmet
 app.use(helmet());
 
