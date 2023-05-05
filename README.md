@@ -13,14 +13,14 @@ La API se ha desarrollado empleando:
 El código se encuentra en el repositorio para su revisión por el alumno en caso de interés. Su desarrollo queda fuera del ámbito de esta asignatura. 
 
 El servidor se distribuye en forma de una aplicación de contenedores Docker sobre Compose. Ambas aplicaciones deben estar instaladas para ejecutar el servidor: 
-  * Docker Community Edition: https://docs.docker.com/install/
-  * Docker Compose: https://docs.docker.com/compose/
+  * Docker Engine: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+  
 
 Tras descargar el código, situarse en el directorio principal (al mismo nivel del archivo docker-compose.yml y ejecutar: 
-> docker-compose up 
+> docker compose up 
   
 Para parar la aplicación ejecutar: 
-> docker-compose down 
+> docker compose down 
   
 Docker descargará las imágenes base y construirá las nuevas imagenes para al aplicacion. 
 
@@ -72,12 +72,11 @@ El subdirectorio [JMeter](https://github.com/davidPalomar-ugr/iseP4JMeter/tree/m
  * apiAlumno.log: Log de accesso Http en formato apache. 
     
 La prueba de JMeter debe: 
+* Simular el acceso concurrente de un número de alumnos no menor a 10 y un número de administradores no menor de 3. 
 * Parametrizar el "EndPoint" del servicio mediante variables para la dirección y puerto del servidor. Emplee "User Defined Variables" del Test Plan. 
 * Definir globalmente las propiedades de los accesos Http y la Autenticacion Basic. Emplee HTTP Request Defatuls y HTTP Authorization Manager. 
-* Los accesos de alumnos y administradores se modelarán con 2 Thread Groups independientes. La carga de accesos de administradores se modelará empleando el registro de accesos  del archivo apiAlumno.log
+* Los accesos de alumnos y administradores se modelarán con 2 Thread Groups independientes. La carga de accesos de administradores se modelará empleando el registro de accesos del archivo apiAlumno.log
 
 La imagen siguiente presenta un posible diseño de la carga: 
 
 ![JMeterLoadTest](images/jmeterLoadTest.png)
-
-En la URL http://\<IPDockerContainer>:3000/status se puede monitorizar el estado de carga del servidor NodeJS. 
