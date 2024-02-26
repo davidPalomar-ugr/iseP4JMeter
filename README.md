@@ -13,11 +13,11 @@ La API se ha desarrollado empleando:
 El código se encuentra en el repositorio para su revisión por el alumno en caso de interés. Su desarrollo queda fuera del ámbito de esta asignatura. 
 
 El servidor se distribuye en forma de una aplicación de contenedores Docker sobre Compose. Ambas aplicaciones deben estar instaladas para ejecutar el servidor: 
-  * Docker Engine: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+  * Docker Engine: https://docs.docker.com/engine/install/
   
 
 Tras descargar el código, situarse en el directorio principal (al mismo nivel del archivo docker-compose.yml y ejecutar: 
-> docker compose up 
+> docker compose up [-d]
   
 Para parar la aplicación ejecutar: 
 > docker compose down 
