@@ -17,6 +17,7 @@
     "jwt-simple": "^0.5.3",
     "mongoose": "6.0.x",
     "morgan": "~1.9.0",
+    "prom-client": "^15.1.0",
     "request": "^2.88.0"
   }
 }

@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const prom = require('prom-client');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -38,6 +39,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', require('./routes/index'));
 app.use('/api/v1', require('./routes/api/v1'));
 
+// Prom setup
+prom.collectDefaultMetrics();
+app.use('/metrics', async (_,res)=>{
+  res.set("Content-Type", prom.register.contentType);
+  res.end(await prom.register.metrics());
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
