@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const promBundle = require('express-prom-bundle');
 const prom = require('prom-client');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -35,16 +36,21 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routes
-app.use('/', require('./routes/index'));
-app.use('/api/v1', require('./routes/api/v1'));
 
 // Prom setup
 prom.collectDefaultMetrics();
+app.use('/((?!metrics))*', promBundle({
+  includePath: true, 
+  normalizePath: [['^/api/v1/alumnos/alumno/.*', 'api/v1/alumnos/alumno/#email']],
+}));
 app.use('/metrics', async (_,res)=>{
   res.set("Content-Type", prom.register.contentType);
   res.end(await prom.register.metrics());
 })
+
+// Routes
+app.use('/', require('./routes/index'));
+app.use('/api/v1', require('./routes/api/v1'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

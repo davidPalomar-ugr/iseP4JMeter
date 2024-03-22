@@ -12,6 +12,7 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "express-basic-auth": "^1.1.5",
+    "express-prom-bundle": "^7.0.0",
     "helmet": "^3.13.0",
     "http-errors": "~1.6.2",
     "jwt-simple": "^0.5.3",
