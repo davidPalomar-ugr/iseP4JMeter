@@ -1,9 +1,9 @@
-mongosh mongodb/etsii --eval 'db.alumnos.drop();'
-mongosh mongodb/etsii --eval 'db.usuarios.drop();'
+#mongosh mongodb/etsii --eval 'db.alumnos.drop();'
+#mongosh mongodb/etsii --eval 'db.usuarios.drop();'
 
-mongoimport --host mongodb --db etsii --collection alumnos --type json --file generated_alumnos.json --jsonArray
+mongoimport --host mongodb --db etsii --collection alumnos --drop --type json --file generated_alumnos.json --jsonArray
 
-mongoimport --host mongodb --db etsii --collection usuarios --type json --file generated_admin.json --jsonArray
+mongoimport --host mongodb --db etsii --collection usuarios --drop --type json --file generated_admin.json --jsonArray
 
 mongosh mongodb/etsii --eval 'db.alumnos.createIndex({"email":1},{"unique":1});'
 
